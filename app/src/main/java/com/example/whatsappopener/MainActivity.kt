@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var number:String="0"
+        var number:String=" "
         if(intent.action== Intent.ACTION_PROCESS_TEXT){
             number=intent.getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT).toString()
         }
@@ -40,6 +40,6 @@ class MainActivity : AppCompatActivity() {
         }else{
             Toast.makeText(this,"Please install Whatsapp",Toast.LENGTH_SHORT).show()
         }
-        finish()g
+        finish()
     }
 }
